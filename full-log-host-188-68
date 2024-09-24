@@ -1,0 +1,897 @@
+2024-08-28T15:40:20.904978+08:00 host-188-68 ctdbd[1234893]: Received SHUTDOWN command.
+2024-08-28T15:40:20.905057+08:00 host-188-68 ctdbd[1234893]: Shutdown sequence commencing.
+2024-08-28T15:40:20.905075+08:00 host-188-68 ctdbd[1234893]: Set runstate to SHUTDOWN (6)
+2024-08-28T15:40:20.905091+08:00 host-188-68 ctdbd[1234893]: Shutting down recovery daemon
+2024-08-28T15:40:20.905117+08:00 host-188-68 ctdbd[1234893]: Monitoring has been stopped
+2024-08-28T15:40:20.905143+08:00 host-188-68 ctdb-recoverd[1235143]: Received SIGTERM, exiting
+2024-08-28T15:40:21.045780+08:00 host-188-68 ctdb-eventd[1234895]: 10.interface: Removing public address aaaa:bbbb::908:102/64 from device ens8f1.908
+2024-08-28T15:40:21.045861+08:00 host-188-68 ctdb-eventd[1234895]: 10.interface: Removing public address 107.107.188.102/16 from device ens8f0.907
+2024-08-28T15:40:21.045878+08:00 host-188-68 ctdb-eventd[1234895]: 10.interface: Removing public address 104.104.188.103/16 from device bond0.909
+2024-08-28T15:40:21.765451+08:00 host-188-68 ctdb-eventd[1234895]: 42.proftpd: Redirecting to /bin/systemctl stop proftpd.service
+2024-08-28T15:40:21.765549+08:00 host-188-68 ctdb-eventd[1234895]: 42.proftpd: Removed /etc/systemd/system/multi-user.target.wants/proftpd.service.
+2024-08-28T15:40:21.837130+08:00 host-188-68 ctdb-eventd[1234895]: 49.winbind: Redirecting to /bin/systemctl stop winbind.service
+2024-08-28T15:40:22.410624+08:00 host-188-68 ctdb-eventd[1234895]: 50.samba: Redirecting to /bin/systemctl stop smb.service
+2024-08-28T15:40:22.410715+08:00 host-188-68 ctdb-eventd[1234895]: 50.samba: Removed /etc/systemd/system/multi-user.target.wants/smb.service.
+2024-08-28T15:40:23.428762+08:00 host-188-68 ctdb-eventd[1234895]: 53.named: Redirecting to /bin/systemctl stop named.service
+2024-08-28T15:40:23.428871+08:00 host-188-68 ctdb-eventd[1234895]: 53.named: Removed /etc/systemd/system/multi-user.target.wants/named.service.
+2024-08-28T15:40:32.703845+08:00 host-188-68 ctdbd[1234893]: Tearing down connection to dead node :0
+2024-08-28T15:40:32.703992+08:00 host-188-68 ctdbd[1234893]: 100.100.188.68:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:33.736937+08:00 host-188-68 ctdbd[1234893]: Tearing down connection to dead node :1
+2024-08-28T15:40:33.737061+08:00 host-188-68 ctdbd[1234893]: 100.100.188.68:4379: node 100.100.188.66:4379 is dead: 0 connected
+2024-08-28T15:40:33.815540+08:00 host-188-68 ctdbd[1234893]: 100.100.188.68:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:33.994008+08:00 host-188-68 ctdb-eventd[1234895]: Received signal 15
+2024-08-28T15:40:33.994028+08:00 host-188-68 ctdb-eventd[1234895]: Shutting down
+2024-08-28T15:40:33.994049+08:00 host-188-68 ctdbd[1234893]: Shutdown sequence complete, exiting.
+2024-08-28T15:40:33.994104+08:00 host-188-68 ctdbd[1234893]: CTDB daemon shutting down
+2024-08-28T15:40:34.725699+08:00 host-188-68 ctdbd[1512060]: CTDB starting on node
+2024-08-28T15:40:34.737962+08:00 host-188-68 ctdbd[1512060]: Loading tunables from /etc/ctdb/ctdb.tunables
+2024-08-28T15:40:34.750546+08:00 host-188-68 ctdbd[1512083]: Starting CTDBD (Version 4.17.7) as PID: 1512083
+2024-08-28T15:40:34.750775+08:00 host-188-68 ctdbd[1512083]: Created PID file /var/run/ctdb/ctdbd.pid
+2024-08-28T15:40:34.750837+08:00 host-188-68 ctdbd[1512083]: Removed stale socket /var/run/ctdb/ctdbd.socket
+2024-08-28T15:40:34.750886+08:00 host-188-68 ctdbd[1512083]: Listening to ctdb socket /var/run/ctdb/ctdbd.socket
+2024-08-28T15:40:34.751191+08:00 host-188-68 ctdbd[1512083]: Starting event daemon /usr/libexec/ctdb/ctdb-eventd -P 1512083 -S 14
+2024-08-28T15:40:34.766245+08:00 host-188-68 ctdb-eventd[1512093]: daemon started, pid=1512093
+2024-08-28T15:40:34.766335+08:00 host-188-68 ctdb-eventd[1512093]: startup completed successfully
+2024-08-28T15:40:34.766396+08:00 host-188-68 ctdb-eventd[1512093]: listening on /var/run/ctdb/eventd.socket
+2024-08-28T15:40:34.766538+08:00 host-188-68 ctdbd[1512083]: Set runstate to INIT (1)
+2024-08-28T15:40:35.084618+08:00 host-188-68 ctdbd[1512083]: PNN is 2
+2024-08-28T15:40:35.095217+08:00 host-188-68 ctdbd[1512083]: Loaded public addresses from /etc/ctdb/public_addresses
+2024-08-28T15:40:35.100986+08:00 host-188-68 ctdbd[1512083]: Vacuuming is disabled for non-volatile database ctdb.tdb
+2024-08-28T15:40:35.101021+08:00 host-188-68 ctdbd[1512083]: Attached to database '/var/lib/ctdb/persistent/ctdb.tdb.2' with flags 0x400
+2024-08-28T15:40:35.101037+08:00 host-188-68 ctdbd[1512083]: Ignoring persistent database 'ctdb.tdb.1'
+2024-08-28T15:40:35.101054+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:40:35.101091+08:00 host-188-68 ctdbd[1512083]: Set lock helper to "/usr/libexec/ctdb/ctdb_lock_helper"
+2024-08-28T15:40:35.105512+08:00 host-188-68 ctdbd[1512083]: Set runstate to SETUP (2)
+2024-08-28T15:40:35.219836+08:00 host-188-68 ctdbd[1512083]: Keepalive monitoring has been started
+2024-08-28T15:40:35.219947+08:00 host-188-68 ctdbd[1512083]: Set runstate to FIRST_RECOVERY (3)
+2024-08-28T15:40:35.220638+08:00 host-188-68 ctdb-recoverd[1512457]: monitor_cluster starting
+2024-08-28T15:40:35.852046+08:00 host-188-68 ctdbd[1512083]: 100.100.188.68:4379: connected to 100.100.188.66:4379 - 1 connected
+2024-08-28T15:40:35.995106+08:00 host-188-68 ctdbd[1512083]: 100.100.188.68:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:36.220966+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:37.222163+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:38.222917+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:39.145794+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:40:39.223959+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:39.262331+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb frozen
+2024-08-28T15:40:39.304565+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 449050589
+2024-08-28T15:40:39.304622+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:40:39.304663+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=449050589, count=0
+2024-08-28T15:40:39.309341+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:40:39.479415+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:40:39.581877+08:00 host-188-68 ctdbd[1512083]: Set runstate to STARTUP (4)
+2024-08-28T15:40:39.586057+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:40:39.723837+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:40:39.916847+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:40:39.956209+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:40:39.956520+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:40:40.117738+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830843, current time is 1724830840
+2024-08-28T15:40:40.118036+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:40:40.224111+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:40.224167+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:40.919045+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:40:41.224324+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:41.224415+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:42.224760+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:42.224860+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:43.225152+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:43.225236+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:44.225357+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:44.225456+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:44.957351+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:40:44.968326+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:40:44.968708+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:40:45.086590+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830847, current time is 1724830845
+2024-08-28T15:40:45.087354+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:40:45.103809+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:40:45.225703+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:45.225778+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:45.924753+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:40:46.225879+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:46.225973+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:47.226567+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:47.226649+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:48.227046+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:48.227130+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:49.227328+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:49.227407+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:50.162025+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:40:50.228449+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:50.228502+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:50.277761+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:40:50.324324+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 1511406004
+2024-08-28T15:40:50.324416+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:40:50.324467+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=1511406004, count=0
+2024-08-28T15:40:50.328495+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:40:50.495256+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:40:50.603842+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:40:50.735501+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:40:51.202304+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:40:51.229334+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:51.229378+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:40:51.336684+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:40:52.229906+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:52.229979+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:40:52.236409+08:00 host-188-68 ctdb-recoverd[1512457]: Initial interface fetched
+2024-08-28T15:40:52.247730+08:00 host-188-68 ctdb-recoverd[1512457]: Trigger takeoverrun
+2024-08-28T15:40:53.123597+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:40:53.230193+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:53.230250+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:40:53.264554+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:40:54.230610+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:54.230691+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:40:55.151900+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:40:55.152246+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:40:55.231406+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:55.231480+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:55.318893+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830859, current time is 1724830855
+2024-08-28T15:40:55.319250+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:40:55.943772+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:40:56.232367+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:56.232448+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:57.232829+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:57.232936+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:58.233321+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:58.233405+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:40:59.233730+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:40:59.233840+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:00.152944+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:41:00.164047+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:41:00.164464+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:41:00.234782+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:00.234851+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:00.272258+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:41:00.323209+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830863, current time is 1724830860
+2024-08-28T15:41:00.323613+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:41:00.943842+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:41:01.235826+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:01.235912+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:01.363251+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:41:01.542635+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:41:01.697144+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 976100137
+2024-08-28T15:41:01.697227+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:41:01.697265+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=976100137, count=0
+2024-08-28T15:41:01.716742+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:41:01.901550+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:41:02.060505+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:41:02.236409+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:02.236476+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:02.245297+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:41:03.236939+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:03.237026+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:04.237434+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:04.237524+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:05.166216+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:41:05.167865+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:41:05.238157+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:05.238203+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:05.323985+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830869, current time is 1724830865
+2024-08-28T15:41:05.324323+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:41:05.948201+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:41:06.238548+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:06.238610+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:07.238991+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:07.239078+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:08.239614+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:08.239695+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:09.240697+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:09.240800+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:10.166571+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:41:10.248180+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:41:10.248349+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:10.248369+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:10.248708+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:41:10.380158+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:41:10.437241+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830873, current time is 1724830870
+2024-08-28T15:41:10.437592+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:41:10.954195+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:41:11.249317+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:11.249414+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:12.249825+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:12.249913+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:12.552202+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:41:12.733491+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:41:12.893965+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 1473153843
+2024-08-28T15:41:12.894047+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:41:12.894093+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=1473153843, count=0
+2024-08-28T15:41:12.916422+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:41:13.120071+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:41:13.248872+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:41:13.250974+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:13.251017+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:13.457706+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:41:14.251715+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:14.251831+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:15.250488+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:41:15.250790+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:41:15.252826+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:15.252854+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:15.412884+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830879, current time is 1724830875
+2024-08-28T15:41:15.413192+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:41:15.957113+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:41:16.253283+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:16.253375+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:17.254011+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:17.254098+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:18.254413+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:18.254505+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:19.255556+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:19.255636+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:20.251403+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:41:20.263082+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:41:20.263166+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:20.263205+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:20.263488+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:41:20.371168+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:41:20.422143+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830883, current time is 1724830880
+2024-08-28T15:41:20.422498+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:41:20.962159+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:41:21.263287+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:21.263370+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:22.263854+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:22.263935+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:23.264418+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:23.264511+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:23.711381+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:41:23.879238+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:41:24.034274+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 1995707722
+2024-08-28T15:41:24.034345+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:41:24.034388+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=1995707722, count=0
+2024-08-28T15:41:24.054632+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:41:24.238873+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:41:24.265055+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:24.265082+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:24.361152+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:41:24.549264+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:41:25.265453+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:25.265554+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:25.265597+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:41:25.266780+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:41:25.431130+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830889, current time is 1724830885
+2024-08-28T15:41:25.431494+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:41:25.964730+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:41:26.265851+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:26.265936+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:27.266388+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:27.266478+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:28.266841+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:28.266912+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:29.267853+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:29.267936+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:30.265789+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:41:30.277127+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:41:30.277248+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:30.277266+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:30.278636+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:41:30.378427+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:41:30.447354+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830893, current time is 1724830890
+2024-08-28T15:41:30.447671+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:41:30.970753+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:41:31.277847+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:31.277918+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:32.278842+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:32.278934+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:33.279835+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:33.279923+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:34.280722+08:00 host-188-68 ctdbd[1512083]: CTDB_WAIT_UNTIL_RECOVERED
+2024-08-28T15:41:34.280805+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:34.808890+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:41:35.017724+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:41:35.175273+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 1611899637
+2024-08-28T15:41:35.175335+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:41:35.175375+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=1611899637, count=0
+2024-08-28T15:41:35.195509+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:41:35.280339+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:41:35.281381+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:35.378918+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:41:35.441533+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830899, current time is 1724830895
+2024-08-28T15:41:35.441872+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:41:35.502975+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:41:35.697954+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:41:35.972623+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:41:36.281686+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:37.282862+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:38.284182+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:39.285444+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:40.282504+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:41:40.282926+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:41:40.285951+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:40.446533+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830903, current time is 1724830900
+2024-08-28T15:41:40.446928+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:41:40.968041+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:41:41.286284+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:42.287106+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:43.288113+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:44.289410+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:45.282939+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:41:45.294184+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:41:45.294263+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:45.294550+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:41:45.399861+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:41:45.454758+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830909, current time is 1724830905
+2024-08-28T15:41:45.455130+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:41:45.783855+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:41:45.899399+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:41:45.950161+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 666025285
+2024-08-28T15:41:45.950216+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:41:45.950253+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=666025285, count=0
+2024-08-28T15:41:45.954677+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:41:45.973345+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:41:46.132100+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:41:46.249931+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:41:46.294711+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:46.388964+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:41:47.295786+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:48.296884+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:49.297403+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:50.297013+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:41:50.297351+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:41:50.298376+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:50.461546+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830913, current time is 1724830910
+2024-08-28T15:41:50.461884+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:41:50.976494+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:41:51.298850+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:52.299728+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:53.300434+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:54.300889+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:55.298044+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:41:55.309120+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:41:55.309220+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:55.309550+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:41:55.422901+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:41:55.473635+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830919, current time is 1724830915
+2024-08-28T15:41:55.474061+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:41:55.994921+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:41:56.310178+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:41:56.904519+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:41:57.027970+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:41:57.080751+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 1652309251
+2024-08-28T15:41:57.080794+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:41:57.080841+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=1652309251, count=0
+2024-08-28T15:41:57.085416+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:41:57.256386+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:41:57.310568+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:57.367598+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:41:57.503024+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:41:58.311487+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:41:59.312173+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:42:00.311825+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:42:00.312161+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:42:00.313198+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:00.433358+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830923, current time is 1724830920
+2024-08-28T15:42:00.433731+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:42:01.002415+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:42:01.313736+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:02.314339+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:03.314526+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:04.315122+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:05.312440+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:42:05.323833+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:42:05.323948+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:05.324285+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:42:05.427862+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:42:05.481540+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830929, current time is 1724830925
+2024-08-28T15:42:05.481887+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:42:06.010431+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:42:06.324753+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:07.325515+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:08.006846+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:42:08.192111+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:42:08.326434+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:08.348574+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 797014684
+2024-08-28T15:42:08.348612+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:42:08.348651+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=797014684, count=0
+2024-08-28T15:42:08.368057+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:42:08.554232+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:42:08.675253+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:42:08.896269+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:42:09.327597+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:42:10.327543+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:42:10.327865+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:10.327902+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:42:10.459311+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830933, current time is 1724830930
+2024-08-28T15:42:10.459641+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:42:11.010152+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:42:11.328941+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:12.330282+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:13.331496+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:14.332016+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:15.328109+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:42:15.388628+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:42:15.388765+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:15.389151+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:42:15.497851+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:42:15.519530+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830939, current time is 1724830935
+2024-08-28T15:42:15.519936+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:42:16.015642+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:42:16.388886+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:17.389485+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:18.390469+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:19.166164+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:42:19.384894+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:42:19.390663+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:19.538631+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 1452428568
+2024-08-28T15:42:19.538704+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:42:19.538745+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=1452428568, count=0
+2024-08-28T15:42:19.559490+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:42:19.740870+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:42:19.875531+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:42:20.055463+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:42:20.390731+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:42:20.390871+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:20.391084+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:42:20.542605+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830943, current time is 1724830940
+2024-08-28T15:42:20.542980+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:42:21.016022+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:42:21.391820+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:22.392688+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:23.393159+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:24.394151+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:25.391257+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:42:25.402270+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:42:25.402379+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:25.403183+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:42:25.513367+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:42:25.519737+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830949, current time is 1724830945
+2024-08-28T15:42:25.520107+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:42:26.019269+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:42:26.403311+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:27.403846+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:28.405007+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:29.406065+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:30.335561+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:42:30.405078+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:42:30.407109+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:30.599027+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830953, current time is 1724830950
+2024-08-28T15:42:30.599390+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:42:30.619855+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:42:30.785616+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 1485221590
+2024-08-28T15:42:30.785676+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:42:30.785717+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=1485221590, count=0
+2024-08-28T15:42:30.806447+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:42:30.996840+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:42:31.025892+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:42:31.141728+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:42:31.348822+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:42:31.407510+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:42:32.408304+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:42:33.408463+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:42:34.408594+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:42:35.407564+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:42:35.407889+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:42:35.408924+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:35.571876+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830959, current time is 1724830955
+2024-08-28T15:42:35.572268+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:42:36.029375+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:42:36.409827+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:37.410398+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:38.410974+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:39.411114+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:40.408041+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:42:40.417126+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:42:40.417211+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:40.417542+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:42:40.548259+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:42:40.578958+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830963, current time is 1724830960
+2024-08-28T15:42:40.579328+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:42:41.036835+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:42:41.417453+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:41.535547+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:42:41.663767+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:42:41.678921+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 668901941
+2024-08-28T15:42:41.678964+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:42:41.679001+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=668901941, count=0
+2024-08-28T15:42:41.679563+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:42:41.856200+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:42:41.958209+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:42:42.073014+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:42:42.418055+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:42:43.418258+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:42:44.419019+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:42:45.419653+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:42:45.419809+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:45.420042+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:42:45.588598+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830969, current time is 1724830965
+2024-08-28T15:42:45.588965+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:42:46.034760+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:42:46.420228+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:47.420486+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:48.421244+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:49.422113+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:50.419948+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:42:50.431447+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:42:50.431557+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:50.431895+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:42:50.543577+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:42:50.586330+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830973, current time is 1724830970
+2024-08-28T15:42:50.586664+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:42:51.040194+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:42:51.432353+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:52.431667+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:42:52.432830+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:52.557931+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:42:52.607080+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 889735653
+2024-08-28T15:42:52.607134+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:42:52.607172+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=889735653, count=0
+2024-08-28T15:42:52.612005+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:42:52.784213+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:42:52.894940+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:42:53.103773+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:42:53.433281+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:42:54.433537+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:42:55.434571+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:42:55.434834+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:42:55.436200+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:42:55.596416+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830979, current time is 1724830975
+2024-08-28T15:42:55.596728+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:42:56.045702+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:42:56.434997+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:57.435497+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:58.436133+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:42:59.437279+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:00.435108+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:43:00.446019+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:43:00.446099+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:00.446799+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:43:00.558962+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:43:00.609911+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830983, current time is 1724830980
+2024-08-28T15:43:00.610205+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:43:01.049712+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:43:01.446784+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:02.446900+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:03.447684+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:03.619732+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:43:03.822654+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:43:03.960163+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 1027277764
+2024-08-28T15:43:03.960227+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:43:03.960274+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=1027277764, count=0
+2024-08-28T15:43:03.978950+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:43:04.172418+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:43:04.309557+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:43:04.447859+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:43:04.503431+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:43:05.447790+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:43:05.448100+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:05.448128+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:43:05.601860+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830989, current time is 1724830985
+2024-08-28T15:43:05.602192+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:43:06.061288+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:43:06.448853+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:07.449332+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:08.450148+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:09.450280+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:10.448973+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:43:10.459502+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:43:10.459581+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:10.459890+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:43:10.569311+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:43:10.623953+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830993, current time is 1724830990
+2024-08-28T15:43:10.624307+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:43:11.064987+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:43:11.460387+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:12.460848+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:13.461673+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:14.462584+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:14.755467+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:43:14.922950+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:43:15.064240+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 1031504449
+2024-08-28T15:43:15.064299+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:43:15.064341+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=1031504449, count=0
+2024-08-28T15:43:15.083670+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:43:15.263999+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:43:15.390350+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:43:15.462223+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:43:15.462458+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:43:15.463503+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:15.590093+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:43:15.627914+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724830999, current time is 1724830995
+2024-08-28T15:43:15.628242+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:43:16.066093+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:43:16.464391+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:17.465118+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:18.465968+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:19.467122+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:20.463366+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:43:20.566309+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:43:20.566425+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:20.566836+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:43:20.668194+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:43:20.728049+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831003, current time is 1724831000
+2024-08-28T15:43:20.728394+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:43:21.073291+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:43:21.566866+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:22.567470+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:23.568197+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:24.568867+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:25.568967+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:25.569190+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:43:25.740030+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831009, current time is 1724831005
+2024-08-28T15:43:25.740356+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:43:25.954021+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:43:26.076394+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:43:26.139905+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:43:26.302177+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 1855643804
+2024-08-28T15:43:26.302252+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:43:26.302297+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=1855643804, count=0
+2024-08-28T15:43:26.321621+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:43:26.513330+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:43:26.569510+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:43:26.635702+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:43:26.829250+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:43:27.570297+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:43:28.571033+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:43:29.571848+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:43:30.571290+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:43:30.572459+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:30.572983+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:43:30.759635+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831013, current time is 1724831010
+2024-08-28T15:43:30.760027+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:43:31.081280+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:43:31.573689+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:32.574845+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:33.575363+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:34.576168+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:35.571766+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:43:35.588798+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:43:35.588964+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:35.589356+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:43:35.697945+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:43:35.749940+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831019, current time is 1724831015
+2024-08-28T15:43:35.750303+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:43:36.081957+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:43:36.589865+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:37.087007+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:43:37.288399+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:43:37.439768+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 1392262865
+2024-08-28T15:43:37.439865+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:43:37.439912+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=1392262865, count=0
+2024-08-28T15:43:37.459090+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:43:37.590300+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:37.647606+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:43:37.802560+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:43:37.992166+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:43:38.591148+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:43:39.592005+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:43:40.591231+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:43:40.591600+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:43:40.592618+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:40.750066+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831023, current time is 1724831020
+2024-08-28T15:43:40.750415+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:43:41.081643+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:43:41.594000+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:42.594352+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:43.594871+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:44.596133+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:45.591852+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:43:45.603337+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:43:45.603440+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:45.603856+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:43:45.724230+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:43:45.765922+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831029, current time is 1724831025
+2024-08-28T15:43:45.766310+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:43:46.084953+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:43:46.604685+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:47.605800+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:48.022888+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:43:48.127259+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:43:48.142846+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 2145797117
+2024-08-28T15:43:48.142885+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:43:48.142919+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=2145797117, count=0
+2024-08-28T15:43:48.143820+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:43:48.321647+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:43:48.426153+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:43:48.564789+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:43:48.606844+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:43:49.608152+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:43:50.605634+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:43:50.605933+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:43:50.608947+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:50.764780+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831033, current time is 1724831030
+2024-08-28T15:43:50.765126+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:43:51.167016+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:43:51.609801+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:52.610768+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:53.611506+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:54.612570+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:55.606659+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:43:55.629628+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:43:55.629745+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:55.630099+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:43:55.739633+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:43:55.796522+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831039, current time is 1724831035
+2024-08-28T15:43:55.796948+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:43:56.169157+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:43:56.630315+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:57.631664+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:58.632300+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:43:59.291777+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:43:59.413231+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:43:59.456087+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 454397741
+2024-08-28T15:43:59.456140+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:43:59.456177+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=454397741, count=0
+2024-08-28T15:43:59.460096+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:43:59.633105+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:43:59.646635+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:43:59.754923+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:43:59.907978+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:44:00.632509+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:44:00.633714+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:00.634932+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:44:00.796227+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831043, current time is 1724831040
+2024-08-28T15:44:00.796574+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:44:01.171362+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:44:01.634625+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:02.635524+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:03.636209+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:04.636962+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:05.633857+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:44:05.644690+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:44:05.644772+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:05.646118+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:44:05.751301+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:44:05.813487+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831049, current time is 1724831045
+2024-08-28T15:44:05.813839+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:44:06.173949+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:44:06.645425+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:07.646330+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:08.647304+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:09.647844+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:10.282792+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:44:10.469754+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:44:10.617310+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 42283419
+2024-08-28T15:44:10.617353+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:44:10.617390+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=42283419, count=0
+2024-08-28T15:44:10.636405+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:44:10.647439+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:44:10.648476+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:10.808997+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831053, current time is 1724831050
+2024-08-28T15:44:10.809345+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:44:10.836242+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:44:10.961166+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:44:11.152398+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:44:11.175269+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:44:11.648848+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:44:12.649854+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:44:13.650577+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:44:14.651897+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:44:15.649769+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:44:15.651258+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:44:15.652290+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:15.815012+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831059, current time is 1724831055
+2024-08-28T15:44:15.815377+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:44:16.182764+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:44:16.653322+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:17.653847+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:18.654726+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:19.655798+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:20.650472+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:44:20.660959+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:44:20.661040+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:20.661385+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:44:20.771074+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:44:20.869540+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831063, current time is 1724831060
+2024-08-28T15:44:20.869914+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:44:21.180755+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:44:21.478173+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:44:21.661141+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:21.669586+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:44:21.830113+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 2143528491
+2024-08-28T15:44:21.830168+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:44:21.830211+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=2143528491, count=0
+2024-08-28T15:44:21.849725+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:44:22.043717+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:44:22.178808+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:44:22.366391+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:44:22.662329+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:44:23.663290+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:44:24.663575+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:44:25.663262+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:44:25.663550+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:44:25.664567+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:25.826680+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831069, current time is 1724831065
+2024-08-28T15:44:25.827067+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:44:26.193937+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:44:26.664947+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:27.665617+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:28.665997+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:29.666682+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:30.663846+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:44:30.675679+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:44:30.675820+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:30.676211+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:44:30.781877+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:44:30.832540+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831073, current time is 1724831070
+2024-08-28T15:44:30.832913+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:44:31.198639+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:44:31.676089+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:32.637497+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:44:32.676834+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:32.835675+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:44:32.987708+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 1191781741
+2024-08-28T15:44:32.987767+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:44:32.987804+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=1191781741, count=0
+2024-08-28T15:44:33.007253+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:44:33.204492+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:44:33.346003+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:44:33.543554+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:44:33.677298+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:44:34.678019+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:44:35.678124+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:44:35.678245+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:35.678483+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:44:35.833966+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831079, current time is 1724831075
+2024-08-28T15:44:35.834377+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:44:36.200029+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:44:36.678513+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:37.678839+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:38.679226+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:39.680184+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:40.678563+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:44:40.689485+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:44:40.689581+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:40.692405+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:44:40.790483+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:44:40.856036+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831083, current time is 1724831080
+2024-08-28T15:44:40.856382+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:44:41.203879+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:44:41.690035+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:42.691074+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:43.691256+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:43.808518+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:44:43.986771+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:44:44.144091+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 1608870768
+2024-08-28T15:44:44.144155+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:44:44.144197+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=1608870768, count=0
+2024-08-28T15:44:44.165180+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:44:44.359197+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:44:44.464206+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:44:44.607355+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:44:44.692078+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:44:45.692569+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:324 wait for pending recoveries to end. Wait one more second.
+2024-08-28T15:44:45.694588+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:44:45.696831+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:44:45.866870+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831089, current time is 1724831085
+2024-08-28T15:44:45.867255+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:44:46.203335+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:44:46.693148+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:47.693590+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:48.694537+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:49.695423+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:50.695321+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:44:50.707342+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:44:50.707449+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:50.707840+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:44:50.835267+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:44:50.869536+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831093, current time is 1724831090
+2024-08-28T15:44:50.869951+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:44:51.224003+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:44:51.708201+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:52.708818+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:53.708988+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:54.710062+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:54.713803+08:00 host-188-68 ctdbd[1512083]: Recovery has started
+2024-08-28T15:44:54.832829+08:00 host-188-68 ctdbd[1512083]: Freeze db: ctdb.tdb
+2024-08-28T15:44:54.884442+08:00 host-188-68 ctdbd[1512083]: Thaw db: ctdb.tdb generation 672723687
+2024-08-28T15:44:54.884484+08:00 host-188-68 ctdbd[1512083]: Release freeze handle for db ctdb.tdb
+2024-08-28T15:44:54.884520+08:00 host-188-68 ctdbd[1512083]: Resent calls for database=ctdb.tdb, generation=672723687, count=0
+2024-08-28T15:44:54.889540+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to NORMAL
+2024-08-28T15:44:55.081328+08:00 host-188-68 ctdbd[1512083]: Recovery has finished
+2024-08-28T15:44:55.197345+08:00 host-188-68 ctdb-recoverd[1512457]: Disabling takeover runs for 60 seconds
+2024-08-28T15:44:55.351887+08:00 host-188-68 ctdb-recoverd[1512457]: Reenabling takeover runs
+2024-08-28T15:44:55.709970+08:00 host-188-68 ctdbd[1512083]: Recovery mode set to ACTIVE
+2024-08-28T15:44:55.710256+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:55.710279+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:44:55.864382+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831099, current time is 1724831095
+2024-08-28T15:44:55.864717+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:44:56.228525+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
+2024-08-28T15:44:56.710415+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:57.711435+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:58.712110+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:44:59.712875+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:45:00.710145+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_recover.c:625 Been in recovery mode for too long. Dropping all IPS
+2024-08-28T15:45:00.823016+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1690 Released 0 public IPs
+2024-08-28T15:45:00.823127+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_monitor.c:313 in recovery. Wait one more second
+2024-08-28T15:45:00.823477+08:00 host-188-68 ctdb-recoverd[1512457]: Attempting to take cluster lock (!/usr/libexec/ctdb/ctdb_mutex_ceph_rados_helper ceph client.admin meta_fs_pool ctdb_reclock 4)
+2024-08-28T15:45:00.931717+08:00 host-188-68 ctdbd[1512083]: ../../ctdb/server/ctdb_takeover.c:1693 Cleaned up after all ips released: 0.
+2024-08-28T15:45:00.986159+08:00 host-188-68 ctdbd[1512083]: Cluster lock expiration time is 1724831103, current time is 1724831100
+2024-08-28T15:45:00.986497+08:00 host-188-68 ctdb-recoverd[1512457]: Unable to take cluster lock - contention
+2024-08-28T15:45:01.219082+08:00 host-188-68 ctdb-recoverd[1512457]: Received leader broadcast, leader=0
