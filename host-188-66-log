@@ -1,0 +1,501 @@
+2024-08-28T15:40:20.904465+08:00 host-188-66 ctdbd[920118]: Received SHUTDOWN command.
+2024-08-28T15:40:20.904584+08:00 host-188-66 ctdbd[920118]: Shutdown sequence commencing.
+2024-08-28T15:40:20.904599+08:00 host-188-66 ctdbd[920118]: Set runstate to SHUTDOWN (6)
+2024-08-28T15:40:20.904612+08:00 host-188-66 ctdbd[920118]: Shutting down recovery daemon
+2024-08-28T15:40:20.904642+08:00 host-188-66 ctdbd[920118]: Monitoring has been stopped
+2024-08-28T15:40:20.904671+08:00 host-188-66 ctdb-recoverd[920266]: Received SIGTERM, exiting
+2024-08-28T15:40:21.027508+08:00 host-188-66 ctdb-eventd[920120]: 10.interface: Removing public address 107.107.188.103/16 from device ens8f0.907
+2024-08-28T15:40:21.027601+08:00 host-188-66 ctdb-eventd[920120]: 10.interface: Removing public address aaaa:bbbb::908:103/64 from device ens8f1.908
+2024-08-28T15:40:21.027616+08:00 host-188-66 ctdb-eventd[920120]: 10.interface: Removing public address 104.104.188.102/16 from device bond0.909
+2024-08-28T15:40:21.704997+08:00 host-188-66 ctdb-eventd[920120]: 42.proftpd: Redirecting to /bin/systemctl stop proftpd.service
+2024-08-28T15:40:21.705063+08:00 host-188-66 ctdb-eventd[920120]: 42.proftpd: Removed /etc/systemd/system/multi-user.target.wants/proftpd.service.
+2024-08-28T15:40:21.759154+08:00 host-188-66 ctdb-eventd[920120]: 49.winbind: Redirecting to /bin/systemctl stop winbind.service
+2024-08-28T15:40:22.282398+08:00 host-188-66 ctdb-eventd[920120]: 50.samba: Redirecting to /bin/systemctl stop smb.service
+2024-08-28T15:40:22.282513+08:00 host-188-66 ctdb-eventd[920120]: 50.samba: Removed /etc/systemd/system/multi-user.target.wants/smb.service.
+2024-08-28T15:40:23.282273+08:00 host-188-66 ctdb-eventd[920120]: 53.named: Redirecting to /bin/systemctl stop named.service
+2024-08-28T15:40:23.282355+08:00 host-188-66 ctdb-eventd[920120]: 53.named: Removed /etc/systemd/system/multi-user.target.wants/named.service.
+2024-08-28T15:40:32.703787+08:00 host-188-66 ctdbd[920118]: Tearing down connection to dead node :0
+2024-08-28T15:40:32.703919+08:00 host-188-66 ctdbd[920118]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:33.736884+08:00 host-188-66 ctdb-eventd[920120]: Received signal 15
+2024-08-28T15:40:33.736905+08:00 host-188-66 ctdbd[920118]: Shutdown sequence complete, exiting.
+2024-08-28T15:40:33.736959+08:00 host-188-66 ctdb-eventd[920120]: Shutting down
+2024-08-28T15:40:33.736975+08:00 host-188-66 ctdbd[920118]: CTDB daemon shutting down
+2024-08-28T15:40:34.524821+08:00 host-188-66 ctdbd[1072334]: CTDB starting on node
+2024-08-28T15:40:34.533136+08:00 host-188-66 ctdbd[1072334]: Loading tunables from /etc/ctdb/ctdb.tunables
+2024-08-28T15:40:34.534068+08:00 host-188-66 ctdbd[1072335]: Starting CTDBD (Version 4.17.7) as PID: 1072335
+2024-08-28T15:40:34.534334+08:00 host-188-66 ctdbd[1072335]: Created PID file /var/run/ctdb/ctdbd.pid
+2024-08-28T15:40:34.534394+08:00 host-188-66 ctdbd[1072335]: Removed stale socket /var/run/ctdb/ctdbd.socket
+2024-08-28T15:40:34.534438+08:00 host-188-66 ctdbd[1072335]: Listening to ctdb socket /var/run/ctdb/ctdbd.socket
+2024-08-28T15:40:34.534759+08:00 host-188-66 ctdbd[1072335]: Starting event daemon /usr/libexec/ctdb/ctdb-eventd -P 1072335 -S 14
+2024-08-28T15:40:34.544975+08:00 host-188-66 ctdb-eventd[1072337]: daemon started, pid=1072337
+2024-08-28T15:40:34.545053+08:00 host-188-66 ctdb-eventd[1072337]: startup completed successfully
+2024-08-28T15:40:34.545103+08:00 host-188-66 ctdb-eventd[1072337]: listening on /var/run/ctdb/eventd.socket
+2024-08-28T15:40:34.545230+08:00 host-188-66 ctdbd[1072335]: Set runstate to INIT (1)
+2024-08-28T15:40:34.825223+08:00 host-188-66 ctdbd[1072335]: PNN is 1
+2024-08-28T15:40:34.835264+08:00 host-188-66 ctdbd[1072335]: Loaded public addresses from /etc/ctdb/public_addresses
+2024-08-28T15:40:34.835496+08:00 host-188-66 ctdbd[1072335]: Ignoring persistent database 'ctdb.tdb.0'
+2024-08-28T15:40:34.840840+08:00 host-188-66 ctdbd[1072335]: Vacuuming is disabled for non-volatile database ctdb.tdb
+2024-08-28T15:40:34.840877+08:00 host-188-66 ctdbd[1072335]: Attached to database '/var/lib/ctdb/persistent/ctdb.tdb.1' with flags 0x400
+2024-08-28T15:40:34.840897+08:00 host-188-66 ctdbd[1072335]: Freeze db: ctdb.tdb
+2024-08-28T15:40:34.840934+08:00 host-188-66 ctdbd[1072335]: Set lock helper to "/usr/libexec/ctdb/ctdb_lock_helper"
+2024-08-28T15:40:34.844762+08:00 host-188-66 ctdbd[1072335]: Set runstate to SETUP (2)
+2024-08-28T15:40:34.953675+08:00 host-188-66 ctdbd[1072335]: Keepalive monitoring has been started
+2024-08-28T15:40:34.953765+08:00 host-188-66 ctdbd[1072335]: Set runstate to FIRST_RECOVERY (3)
+2024-08-28T15:40:34.954553+08:00 host-188-66 ctdb-recoverd[1072527]: monitor_cluster starting
+2024-08-28T15:40:35.806836+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.817068+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.817220+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.817299+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.817706+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.818048+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.818387+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.818416+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.818459+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.818564+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.818941+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.819062+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.819387+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.819489+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.819852+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.820015+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.820044+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.820083+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.820311+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.820340+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.820379+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.820483+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.820662+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.820688+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.820729+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.820805+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.820916+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.821074+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.821205+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.821262+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.821397+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.821642+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.821670+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.821729+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.822113+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.822212+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.822431+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.822460+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.822502+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.822905+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.823005+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.823084+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.823263+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.823292+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.823336+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.823483+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.823511+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.823557+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.823634+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.823907+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.823935+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.823995+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.824079+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.824314+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.824360+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.824409+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.824491+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.824750+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.824803+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.824856+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.824933+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.824983+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.825184+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.825213+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.825266+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.825393+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.825511+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.825678+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.825847+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.825874+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.825930+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.826017+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.826179+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.826503+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.826749+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.826827+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.827024+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.827055+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.827106+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.827196+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.827457+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.827484+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.827548+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.828022+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.828064+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.828134+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.828430+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.828589+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.828871+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.828993+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.829052+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.829407+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.829512+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.829784+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.829813+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.829860+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.829936+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.830269+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.830373+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.830669+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.830784+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.830833+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.830899+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.831210+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.831304+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.831547+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.831570+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.831617+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.831680+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.831975+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.832015+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.832070+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.832132+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.832232+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.832347+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.832498+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.832524+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.832565+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.832691+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.832747+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.832768+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.832818+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.832894+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.833015+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.833317+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.833348+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.833390+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.833442+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.833704+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.833798+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.834037+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.834079+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.834127+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.834228+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.834457+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.834479+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.834517+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.834595+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.834840+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.834863+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.834908+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.835010+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.835234+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.835288+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.835364+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.835430+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.835680+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.835706+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.835769+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.835880+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.835900+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.835939+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.836067+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.836088+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.836135+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.836203+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.836426+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.836447+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.836493+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.836561+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.836899+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.837029+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.837070+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.837111+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.837436+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.837459+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.837500+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.837645+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.837666+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.837702+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.837871+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.837891+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.837927+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.838262+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.838381+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.838562+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.838584+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.838620+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.838692+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.838789+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.838939+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.838983+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.839027+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.839153+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.839175+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.839216+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.839290+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.839530+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.839567+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.839630+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.839696+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.839919+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.839987+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.840068+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.840133+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.840392+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.840450+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.840501+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.840604+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.840716+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.840878+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.840911+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.840952+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.841043+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.841276+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.841305+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.841353+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.841427+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.841662+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.841689+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.841735+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.841811+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.842140+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.842169+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.842214+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.842289+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.842540+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.842657+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.842702+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.842761+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.843057+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.843160+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.843430+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.843458+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.843510+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.843586+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.843830+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.843858+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.843897+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.843999+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.844184+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.844227+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.844268+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.844419+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.844479+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.844525+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.844630+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.844768+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.844918+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.844944+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.844999+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.845077+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.845267+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.845306+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.845348+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.845634+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.845737+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.845778+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.845993+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.846020+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.846058+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.846138+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.846333+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.846359+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.846396+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.846487+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.846709+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.846735+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.846776+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.846859+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.847116+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.847157+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.847205+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.847473+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.847575+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.847799+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.847826+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.847867+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.847955+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.848081+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.848237+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.848264+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.848307+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.848383+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.848483+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.848583+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.848685+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.848848+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.848890+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.849170+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.849200+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.849244+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.849337+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.849541+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.849568+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.849613+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.849690+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.849930+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.849975+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.850021+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.850095+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.850447+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.850473+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.850517+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.850594+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.850634+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.850731+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.850835+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.850989+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.851017+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.851061+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.851134+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.851240+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.851363+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.851602+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 1 connected
+2024-08-28T15:40:35.851628+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.851671+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 0 connected
+2024-08-28T15:40:35.851745+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.851889+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.852022+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.68:4379 - 1 connected
+2024-08-28T15:40:35.852054+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.852096+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.852196+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.852398+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.852425+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.852469+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.852546+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.852649+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.852803+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.852846+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.853139+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.853241+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.853491+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.853519+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.853578+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.853653+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.853842+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.853868+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.853908+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.854020+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.854045+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.854088+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.854164+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.854206+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.854440+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.854470+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.854518+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.854592+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.854826+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.854854+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.854920+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.855061+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.855089+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.855138+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.855302+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.855329+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.855369+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.855601+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.855628+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.855676+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.855768+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.855944+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.855980+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.856024+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.856096+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.856222+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.856463+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.856504+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.856559+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.856651+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.856878+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.856905+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.856953+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.857284+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.857394+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.857669+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.857696+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.857743+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.857864+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.857891+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.857929+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.858023+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.858153+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.858376+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.858436+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.858480+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.858574+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.858668+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.858880+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.858919+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.858984+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.859095+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.859138+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.859302+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.859328+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.859379+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.859453+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.859691+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.859754+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.859851+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.859936+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.859988+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.860185+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.860213+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.860260+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.860343+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.860578+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.860606+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.860655+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.860770+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.860989+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.861017+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.861065+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.861138+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.861423+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.861467+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.861514+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.861642+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.862100+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.862130+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.862183+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.862289+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.862333+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.862615+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.862645+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.862695+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.862780+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.862894+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.863061+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.863104+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.863151+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.863232+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.863389+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.863521+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.863655+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.863774+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.863883+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.864197+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.864233+08:00 host-188-66 ctdbd[1072335]: ctdb_listen_event: Incoming queue active, rejecting connection from 100.100.188.64
+2024-08-28T15:40:35.864274+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.864335+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.864434+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.864644+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.864704+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.864753+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.864868+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.864893+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.864934+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.865083+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.865125+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.865173+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.865297+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.865324+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.865369+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.865457+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.865682+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.865724+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.865771+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.865854+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.865977+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.866143+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: connected to 100.100.188.64:4379 - 2 connected
+2024-08-28T15:40:35.866170+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.866213+08:00 host-188-66 ctdbd[1072335]: 100.100.188.66:4379: node 100.100.188.64:4379 is dead: 1 connected
+2024-08-28T15:40:35.866288+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.866389+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+2024-08-28T15:40:35.866497+08:00 host-188-66 ctdbd[1072335]: Tearing down connection to dead node :0
+...
